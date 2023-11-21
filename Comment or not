@@ -1,0 +1,12 @@
+#include <stdio.h>
+int main(int argc, char *argv[]) {
+    if (argc > 1) {
+        printf("Command-line argument(s) provided:\n");
+        for (int i = 1; i < argc; i++) {
+            printf("%s\n", argv[i]);
+        }
+    } else {
+        printf("No command-line arguments provided.\n");
+    }
+    return 0;
+}
